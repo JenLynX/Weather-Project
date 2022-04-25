@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="block">
+      <h1>
+        <span id="city-input">
+          <span class="city">Victoria, BC</span>
+          <span class="country"> Canada </span> </span
+        ><br /><span class="ct"> Current Temperture </span>
+        <span id="current-temp">9</span>°C<br />
+        <span id="description"
+          ><span class="sky"> Partly Cloudy</span>
+          <span class="icon" id="emoji">🌤</span></span
+        >
+      </h1>
+      <h2></h2>
+      <form id="city-place">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Type a City"
+          autofocus="on"
+          autocomplete="off"
+          id="city-enter"
+        />
+
+        <button type="submit">Search</button>
+      </form>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <strong> Mon</strong>
+            <div class="day">March 28</div>
+            <div><strong>12°C</strong></div>
+            <div class="icon">☁️</div>
+            <div class="night">Night 6°</div>
+          </div>
+          <div class="col">
+            <strong> Tue</strong>
+            <div class="day">March 29</div>
+            <div><strong>12°C</strong></div>
+            <div class="icon">⛅️</div>
+            <div class="night">Night 6°</div>
+          </div>
+          <div class="col">
+            <strong> Wed</strong>
+            <div class="day">March 30</div>
+            <div><strong>11°C</strong></div>
+            <div class="icon">🌤</div>
+            <div class="night">Night 5°</div>
+          </div>
+          <div class="col">
+            <strong> Thu</strong>
+            <div class="day">March 31</div>
+            <div><strong>9°C</strong></div>
+            <div class="icon">⛅️</div>
+            <div class="night">Night 4°</div>
+          </div>
+          <div class="col">
+            <strong> Fri</strong>
+            <div class="day">April 1</div>
+            <div><strong>9°C</strong></div>
+            <div class="icon">🌧</div>
+            <div class="night">Night 5°</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="myself">Open source code by Jen Xamin</footer>
+    <script src="app.js"></script>
+  </body>
+</html>

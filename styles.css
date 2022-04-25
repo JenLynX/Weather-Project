@@ -1,0 +1,121 @@
+.block {
+  border: 2px solid #949494;
+  background-color: rgba(183, 183, 183, 0.6);
+  position: relative;
+  margin: 130px 270px 130px 270px;
+  padding: 0px 50px 160px;
+  min-width: 900px;
+}
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/169/original/IMG_2897.jpeg?1648356463");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+h1 {
+  background-color: rgba(253, 253, 138, 0.7);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  top: 35px;
+  max-width: 600px;
+  padding: 10px;
+
+  font-family: Cormorant;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  border-radius: 10px;
+  border: 1px solid rgb(253, 253, 138);
+}
+h2 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 48px;
+  font-size: 21px;
+  font-family: Volkhov;
+}
+.city {
+  font-size: 29px;
+}
+
+.country {
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 600;
+}
+.ct {
+  font-weight: 200;
+  font-style: italic;
+}
+.sky {
+  font-style: italic;
+  font-weight: 600;
+}
+.icon {
+  font-size: 32px;
+}
+form {
+  position: relative;
+  top: 60px;
+  padding: 10px;
+  background-color: rgba(24, 98, 172, 0.9);
+  border-radius: 30px;
+  border: 1px solid rgb(24, 98, 172);
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.form-control {
+  width: 250px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 5px solid rgb(24, 98, 172);
+  font-family: Cormorant;
+  color: #606470;
+}
+.container {
+  position: relative;
+  top: 110px;
+  display: block;
+  margin: 0 auto;
+
+  font-family: Volkhov;
+  font-size: 20px;
+  max-width: 900px;
+}
+.day {
+  font-family: Amiri;
+  font-style: italic;
+  font-size: 20px;
+}
+.col {
+  text-align: center;
+  line-height: 25px;
+  background-color: rgba(84, 188, 233, 0.8);
+  border-radius: 50%;
+  padding: 10px 0px;
+  border: 1px solid rgba(108, 207, 250);
+  margin: 0px 5px;
+}
+.night {
+  font-size: 18px;
+  color: #606470;
+}
+.myself {
+  position: relative;
+  bottom: 130px;
+  left: 905px;
+  font-family: Amiri;
+  color: rgba(245, 240, 240, 0.6);
+  font-size: 18px;
+}
