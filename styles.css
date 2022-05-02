@@ -40,7 +40,19 @@ h1 {
   font-weight: 600;
   font-size: 20px;
   position: relative;
+  text-transform: capitalize;
+  position: relative;
+  top: 5px;
 }
+.sky {
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  text-transform: capitalize;
+  position: relative;
+  top: 5px;
+}
+
 .HM {
   font-size: 18px;
   position: relative;
@@ -54,8 +66,8 @@ h1 {
   color: #35373d;
 }
 img {
-  max-height: 55px;
-  max-width: 55px;
+  max-height: 58px;
+  max-width: 58px;
 }
 h2 {
   text-align: right;

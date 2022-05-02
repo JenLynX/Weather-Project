@@ -30,17 +30,31 @@ let months = [
 let month = months[now.getMonth()];
 let date = now.getDate();
 let year = now.getFullYear();
+let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 
-h2.innerHTML = `${day}, ${month} ${date}, ${year}`;
+h2.innerHTML = `${day}, ${month} ${date}, ${year}   ${hours}:${minutes}`;
 
 function showTemp(response) {
   document.querySelector("#city-input").innerHTML = response.data.name;
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
-  
+  celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
+  document.querySelector("#humid").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 
   let iconElement = document.querySelector("#emoji");
   iconElement.setAttribute(
@@ -56,6 +70,14 @@ function search(city) {
 
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
 }
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temp");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTMl = Math.round(fahrenheitTemperature);
+}
+let celsiusTemperature = null;
+
 function yourCity(event) {
   event.preventDefault();
   let city = document.querySelector("#city-enter").value;
@@ -63,3 +85,6 @@ function yourCity(event) {
 }
 let form = document.querySelector("#city-place");
 form.addEventListener("submit", yourCity);
+
+let fahLink = document.querySelector("#fah-link");
+fahLink.addEventListener("click", displayFahrenheitTemperature);
