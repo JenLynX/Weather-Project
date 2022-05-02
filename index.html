@@ -21,80 +21,90 @@
   </head>
 
   <body>
-    <div class="block">
-      <h1>
-        <span id="city-input">
-          <span class="city">Victoria, BC</span>
-          <span class="country"> Canada </span> </span
-        ><br /><span class="ct"> Current Temperture </span>
-        <span id="current-temp">9</span>°C<br />
-        <span id="description"
-          ><span class="sky"> Partly Cloudy</span>
-          <span class="icon" id="emoji">🌤</span></span
-        >
-      </h1>
-      <h2></h2>
-      <form id="city-place">
-        <input
-          class="form-control"
-          type="search"
-          placeholder="Type a City"
-          autofocus="on"
-          autocomplete="off"
-          id="city-enter"
-        />
+    <div class="appWrap">
+      
+        <form id="city-place">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Type a City"
+            autofocus="on"
+            autocomplete="off"
+            id="city-enter"
+          />
 
-        <button type="submit">Search</button>
-      </form>
-      <div class="container">
+          <button type="submit">Search</button>
+        </form>
+        <h1>
+          <span class="city" id="city-input">Vancouver</span>
+        </h1>
         <div class="row">
-          <div class="col">
-            <strong> Mon</strong>
-            <div class="day">March 28</div>
-            <div><strong>12°C</strong></div>
-            <div class="icon">☁️</div>
-            <div class="night">Night 6°</div>
+          <div class="col-3">
+            <span id="current-temp">22</span><span class="unit"> °C | °F</span>
           </div>
-          <div class="col">
-            <strong> Tue</strong>
-            <div class="day">March 29</div>
-            <div><strong>12°C</strong></div>
-            <div class="icon">⛅️</div>
-            <div class="night">Night 6°</div>
+          <div class="col-3">
+            <span id="description" class="sky"> Clear</span>
+
+            <span class="icon"> <img src="" id="emoji" /></span>
           </div>
-          <div class="col">
-            <strong> Wed</strong>
-            <div class="day">March 30</div>
-            <div><strong>11°C</strong></div>
-            <div class="icon">🌤</div>
-            <div class="night">Night 5°</div>
-          </div>
-          <div class="col">
-            <strong> Thu</strong>
-            <div class="day">March 31</div>
-            <div><strong>9°C</strong></div>
-            <div class="icon">⛅️</div>
-            <div class="night">Night 4°</div>
-          </div>
-          <div class="col">
-            <strong> Fri</strong>
-            <div class="day">April 1</div>
-            <div><strong>9°C</strong></div>
-            <div class="icon">🌧</div>
-            <div class="night">Night 5°</div>
+
+         <div class = "col-3">
+            <span class="HM">Humidity: <span id="humid">23%</span></span>
+</div>
+<div class = "col-3">
+          <span class="WS"> Wind Speed:<span id="wind"> 10km</span></span>
+</div>
+        
+        <h2></h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="day">Mon</div>
+              <div><strong>12°C</strong></div>
+              <div class="icon">☁️</div>
+              <div class="night">Night 6°</div>
+            </div>
+            <div class="col">
+              <div class="day">Tue</div>
+              <div><strong>12°C</strong></div>
+              <div class="icon">⛅️</div>
+              <div class="night">Night 6°</div>
+            </div>
+            <div class="col">
+              <div class="day">Wed</div>
+              <div><strong>11°C</strong></div>
+              <div class="icon">🌤</div>
+              <div class="night">Night 5°</div>
+            </div>
+            <div class="col">
+              <div class="day">Thu</div>
+              <div><strong>9°C</strong></div>
+              <div class="icon">⛅️</div>
+              <div class="night">Night 4°</div>
+            </div>
+            <div class="col">
+              <div class="day">Fri</div>
+              <div><strong>9°C</strong></div>
+              <div class="icon">🌧</div>
+              <div class="night">Night 5°</div>
+            </div>
           </div>
         </div>
-      </div>
+      
+
+      <footer class="myself">
+        <a
+          href="https://github.com/JenLynX/Weather-Project"
+          target="blank"
+          rel="noreferrer"
+          >Open source code</a
+        >
+        by Jen Xamin
+      </footer>
     </div>
-    <footer class="myself">
-      <a
-        href="https://github.com/JenLynX/Weather-Project"
-        target="blank"
-        rel="noreferrer"
-        >Open source code</a
-      >
-      by Jen Xamin
-    </footer>
+    
     <script src="app.js"></script>
   </body>
+
 </html>
