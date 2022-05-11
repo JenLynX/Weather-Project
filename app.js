@@ -42,11 +42,11 @@ if (minutes < 10) {
 h2.innerHTML = `${day}, ${month} ${date}, ${year}   ${hours}:${minutes}`;
 
 function showTemp(response) {
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city-input").innerHTML = response.data.name;
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
-  celsiusTemperature = response.data.main.temp;
 
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
@@ -72,9 +72,11 @@ function search(city) {
 }
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#current-temp");
+  celsiusTemperature = response.data.main.temp;
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTMl = Math.round(fahrenheitTemperature);
+  document.querySelector("#current-temp").innerHTMl = Math.round(
+    fahrenheitTemperature
+  );
 }
 let celsiusTemperature = null;
 
