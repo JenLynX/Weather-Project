@@ -1,6 +1,7 @@
 let now = new Date();
 
 let h2 = document.querySelector("h2");
+let h3 = document.querySelector("h3");
 
 let days = [
   "Sunday",
@@ -30,6 +31,7 @@ let months = [
 let month = months[now.getMonth()];
 let date = now.getDate();
 let year = now.getFullYear();
+
 let hours = now.getHours();
 if (hours < 10) {
   hours = `0${hours}`;
@@ -39,7 +41,8 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-h2.innerHTML = `${day}, ${month} ${date}, ${year}   ${hours}:${minutes}`;
+h2.innerHTML = `${day}, ${month} ${date},  ${year}`;
+h3.innerHTML = `${hours}:${minutes}`;
 
 function showTemp(response) {
   celsiusTemperature = response.data.main.temp;
@@ -78,6 +81,11 @@ function displayFahrenheitTemperature(event) {
     fahrenheitTemperature
   );
 }
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  document.querySelector("#current-temp").innerHTML =
+    Math.round(celsiusTemperature);
+}
 let celsiusTemperature = null;
 
 function yourCity(event) {
@@ -90,3 +98,8 @@ form.addEventListener("submit", yourCity);
 
 let fahLink = document.querySelector("#fah-link");
 fahLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celLink = document.querySelector("#cel-link");
+celLink.addEventListener("click", displayCelsiusTemperature);
+
+search("Vancouver");
