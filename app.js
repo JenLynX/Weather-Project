@@ -72,9 +72,9 @@ function search(city) {
 }
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  celsiusTemperature = response.data.main.temp;
+
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  document.querySelector("#current-temp").innerHTMl = Math.round(
+  document.querySelector("#current-temp").innerHTML = Math.round(
     fahrenheitTemperature
   );
 }
