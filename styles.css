@@ -1,8 +1,8 @@
 .appWrap {
   max-width: 700px;
   margin: 44px auto;
-  padding: 30px;
-  border: 2px solid #6daff1;
+  padding: 30px 30px 15px;
+  border: 2px solid #7bb6f1;
   border-radius: 5px;
   background-color: #8dc6ff;
 }
@@ -16,7 +16,7 @@ body {
 h1 {
   font-family: Cormorant;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 38px;
   padding: 10px 10px 5px 10px;
   margin: 0;
   height: 70px;
@@ -25,49 +25,58 @@ h1 {
   font-family: Cormorant;
 }
 #current-temp {
-  font-size: 44px;
+  font-family: Cormorant;
+  font-size: 48px;
   font-weight: 600;
-  padding-left: 10px;
+  padding-left: 30px;
   position: relative;
+  top: 10px;
 }
 .unit {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  bottom: 16px;
+  bottom: 10px;
 }
 #description {
+  font-family: Cormorant;
   font-weight: 600;
   font-size: 20px;
   position: relative;
   text-transform: capitalize;
   position: relative;
-  top: 5px;
+  top: 36px;
 }
 .sky {
+  font-family: Cormorant;
   font-weight: 600;
   font-size: 20px;
   position: relative;
   text-transform: capitalize;
   position: relative;
-  top: 5px;
+  top: 20px;
 }
 
 .HM {
+  font-family: Cormorant;
+
   font-size: 18px;
   position: relative;
-  top: 10px;
+  top: 38px;
+  left: 16px;
   color: #35373d;
 }
 .WS {
+  font-family: Cormorant;
+
   font-size: 18px;
   position: relative;
-  top: 10px;
+  top: 38px;
   color: #35373d;
 }
 img {
-  max-height: 58px;
-  max-width: 58px;
+  max-height: 66px;
+  max-width: 66px;
 }
 h2 {
   text-align: right;
@@ -119,7 +128,7 @@ form {
   font-size: 20px;
   max-width: 900px;
   position: relative;
-  bottom: 17px;
+  bottom: 50px;
 }
 .day {
   font-family: Amiri;
@@ -129,11 +138,11 @@ form {
 .col {
   text-align: center;
   line-height: 25px;
-  background: linear-gradient(to top, #fff1eb 0%, #c0eafd 100%);
+  background: linear-gradient(to top, #fad9cb 0%, #a2defa 100%);
 
   border-radius: 50%;
   padding: 10px 0px;
-  border: 1px solid rgb(151, 189, 243);
+  border: 1px solid rgb(139, 183, 245);
   margin: 0px 5px;
 }
 .night {
@@ -143,7 +152,7 @@ form {
 .myself {
   position: relative;
   text-align: right;
-  top: 28px;
+  top: 16px;
   left: 14px;
 
   font-family: Amiri;
