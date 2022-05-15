@@ -21,7 +21,7 @@ h1 {
   margin: 0;
   height: 70px;
 }
-.col-3 {
+#extra {
   font-family: Cormorant;
 }
 #current-temp {
@@ -128,23 +128,30 @@ form {
   font-size: 20px;
   max-width: 900px;
   position: relative;
-  bottom: 50px;
+  bottom: 25px;
+  text-align: center;
+  line-height: 24px;
+  right: 15px;
 }
 .day {
   font-family: Amiri;
   font-style: italic;
   font-size: 20px;
 }
-.col {
-  text-align: center;
-  line-height: 25px;
+#days-emoji {
+  max-height: 50px;
+  max-width: 50px;
+}
+#day-style {
   background: linear-gradient(to top, #fad9cb 0%, #a2defa 100%);
 
-  border-radius: 50%;
   padding: 10px 0px;
   border: 1px solid rgb(139, 183, 245);
   margin: 0px 5px;
+  min-width: 90px;
+  border-radius: 16px;
 }
+
 .night {
   font-size: 18px;
   color: #606470;
