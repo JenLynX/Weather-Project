@@ -6,6 +6,7 @@
   border-radius: 5px;
   background-color: #8dc6ff;
 }
+
 body {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   height: 100%;
@@ -13,10 +14,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 h1 {
   font-family: Cormorant;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 40px;
   padding: 10px 10px 5px 10px;
   margin: 0;
   height: 70px;
@@ -28,15 +30,15 @@ h1 {
   font-family: Cormorant;
   font-size: 48px;
   font-weight: 600;
-  padding-left: 30px;
+  padding-left: 36px;
   position: relative;
-  top: 10px;
+  top: 12px;
 }
 .unit {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  bottom: 10px;
+  bottom: 8px;
 }
 #description {
   font-family: Cormorant;
@@ -45,8 +47,9 @@ h1 {
   position: relative;
   text-transform: capitalize;
   position: relative;
-  top: 24px;
+  top: 21px;
 }
+
 .sky {
   font-family: Cormorant;
   font-weight: 600;
@@ -128,32 +131,32 @@ form {
   font-size: 20px;
   max-width: 900px;
   position: relative;
-  bottom: 25px;
+  bottom: 32px;
   text-align: center;
-  line-height: 24px;
+  line-height: 26px;
   right: 15px;
 }
 .day {
   font-family: Amiri;
   font-style: italic;
-  font-size: 20px;
+  font-size: 21px;
 }
 #days-emoji {
   max-height: 50px;
   max-width: 50px;
 }
 #day-style {
-  background: linear-gradient(to top, #fad9cb 0%, #a2defa 100%);
+  background: linear-gradient(to bottom, #fad9cb 0%, #a2defa 100%);
 
   padding: 10px 0px;
-  border: 1px solid rgb(139, 183, 245);
+  border: 2px solid rgb(127, 169, 228);
   margin: 0px 5px;
   min-width: 90px;
   border-radius: 16px;
 }
 
 .night {
-  font-size: 18px;
+  font-size: 15px;
   color: #606470;
 }
 .myself {

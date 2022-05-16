@@ -104,7 +104,9 @@ function displayForecast(response) {
               <div class="icon"><img src="http://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
               }@2x.png" id="days-emoji" /></div>
-              <div class="night">Low ${Math.round(forecastDay.temp.min)}°</div>
+              <div class="night">Night ${Math.round(
+                forecastDay.temp.min
+              )}°</div>
             </div></div></div>
             `;
     }
@@ -119,20 +121,6 @@ function search(city) {
 
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
 }
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  document.querySelector("#current-temp").innerHTML = Math.round(
-    fahrenheitTemperature
-  );
-}
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  document.querySelector("#current-temp").innerHTML =
-    Math.round(celsiusTemperature);
-}
-let celsiusTemperature = null;
 
 function yourCity(event) {
   event.preventDefault();
@@ -141,11 +129,5 @@ function yourCity(event) {
 }
 let form = document.querySelector("#city-place");
 form.addEventListener("submit", yourCity);
-
-let fahLink = document.querySelector("#fah-link");
-fahLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celLink = document.querySelector("#cel-link");
-celLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Vancouver");
